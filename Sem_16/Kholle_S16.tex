@@ -4,6 +4,30 @@
 \usepackage[nb-sem=16, auteurs={Hugo Vangilluwen}]{../kholles}
 
 \begin{document}
+
+\maketitle
+	\begin{question_kholle}
+		{Soit $f$ définie sur un intervalle contenant $x_0$ \\
+		$f$ est dérivable en $x_0$ $\iff$ $f$ admet un $DL_1(x_0)$\\
+		De plus, dans ce cas, ce $DL_1(x_0)$ est... }
+  
+		$\Rightarrow$ Montrons que :$f(x)=f(x_0)+f'(x_0)(x-x_0)+o(x-x_0)$\\
+		$f$ derivable sur un intervalle contenant $x_0$ donc $f'(x_0)$ existe.\\
+  
+		Calculon:\\
+		$\lim\limits_{x \to x_0} \frac{f(x)-f(x_0)-f'(x_0)(x-x_0)}{x-x_0}$\\
+		$\frac{f(x)-f(x_0)-f'(x_0)(x-x_0)}{x-x_0}=\frac{f(x)-f(x_0)}{x-x_0}-f'(x_0) \to f'(x_0)-f'(x_0)=0$\\
+		Ainsi:$f(x)=f(x_0)+f'(x_0)(x-x_0)+o(x-x_0)$\\\\
+		$\Leftarrow$ Soit $f$ une fonction admentant un$DL_1$ en $x_0$, Montrons qu'elle est derivable en $x_0$:\\
+		$f$ admet un $DL_1$ en $x_0$ donc:\\
+		$\exists (a,b)\in \mathbb{R}:f(x)=a+b(x-x_0)+o(x-x_0)$\\
+		on a donc:$f(x)=a+o(1)\to a$\\
+		Ainsi $f$ est continue en $x_0$, donc $\lim\limits_{x \to x_0}f(x)=f(x_0)$\\
+		Par unicité de la limite: $a=f(x_0)$\\
+		$\frac{f(x)-f(x_0)}{x-x_0}=\frac{f(x_0)+b(x-x_0)+o(x-x_0)-f(x_0)}{x-x_0}=b+\frac{o(x-x_0)}{x-x_0}\to b$\\
+		Donc $f$ est derivable en $x_0$
+
+  
 	\maketitle
 	
 	\begin{question_kholle}
